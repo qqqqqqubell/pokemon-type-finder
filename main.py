@@ -45,3 +45,5 @@ async def predict_image(file: UploadFile = File(...)):
         "second_class": int(top_2[1]),
         "second_prob": float(true_probabilities[top_2[1]])
     }
+
+    
