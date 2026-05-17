@@ -1,0 +1,150 @@
+
+/* 전체 배경을 새하얀 색 대신 편안한 미색(아이보리 그레이)으로 변경 */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Malgun Gothic', sans-serif;
+    text-align: center;
+    padding: 60px 20px;
+    color: #3a3a3c; /* 글자색도 완전 검정 대신 부드러운 흑철색 */
+}
+
+/* 한글 제목 스타일: 굵고 깔끔하게, 은은한 그림자 */
+.pokedex-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #2c3e50; /* 깊이감 있는 네비 그레이 */
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.pokedex-subtitle {
+    font-size: 1rem;
+    color: #8e8e93; /* 차분한 연회색 */
+    margin-bottom: 40px;
+}
+
+
+/* 전체 레이아웃 정돈 */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Malgun Gothic', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+/*  꼼수로 만든 이쁜 파일 선택 버튼 */
+#imageInput {
+    display: none; /* 원본 못생긴 버튼은 완전히 숨기기 */
+}
+
+.custom-file-btn {
+    display: inline-block;
+    background-color: #8fa4c4; /* 채도를 낮춘 은은한 블루 */
+    color: white;
+    padding: 14px 32px;
+    border-radius: 12px; /* 트렌디한 둥근 사각형 느낌 */
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(143, 164, 196, 0.2);
+    transition: all 0.25s ease;
+}
+
+.custom-file-btn:hover {
+    background-color: #768cae;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(143, 164, 196, 0.35);
+}
+
+/* 도감 분석 시작 버튼 */
+#analyzeBtn {
+    background-color: #4a5568; 
+    color: white;
+    border: none;
+    padding: 14px 45px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 0 4px 12px rgba(74, 85, 104, 0.2);
+    transition: all 0.25s;
+}
+
+#analyzeBtn:hover {
+    background-color: #3a4252;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(74, 85, 104, 0.35);
+}
+
+/* 몬스터볼 로딩 영역 튜닝 */
+#loader {
+    display: none;
+    margin: 40px 0;
+}
+
+.pokeball-spinner {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto 15px auto;
+    opacity: 0.7; /* 몬스터볼 자체를 살짝 투명하게 만들어서 은은함 연출 */
+    animation: spin 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite; /* 부드러운 회전 속도 정렬 */
+}
+
+#loader p {
+    color: #8e8e93;
+    font-size: 0.9rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* 💬 개발자 코멘트 박스 */
+.developer-box {
+    background-color: #ffffff;
+    border-left: 4px solid #8fa4c4; /* 은은한 데님 블루 */
+    padding: 20px;
+    max-width: 460px;
+    margin: 40px auto 0 auto;       /* 결과창 아래에 40px 여백, 가운데 정렬 */
+    text-align: left;
+    border-radius: 4px 12px 12px 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03); /* 아주 살짝만 띄우는 그림자 */
+    border: 1px solid #eef0f3;
+    border-left: none; /* 왼쪽은 푸른 선이 있으니 테두리 해제 */
+}
+
+.developer-box h3 {
+    margin-top: 0;
+    font-size: 0.95rem;
+    color: #4a5568; /* 차볼 그레이 */
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+}
+
+.developer-box p {
+    font-size: 0.88rem;
+    color: #5a6a85;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+    word-break: keep-all; /* 한글 단어가 어색하게 끊기지 않도록 설정 */
+}
+
+/* 66% 강조 색상 */
+.developer-box .highlight {
+    font-weight: bold;
+    color: #e56c3e; /* 은은한 불꽃 주황색으로 포인트 */
+}
+
+/* 마지막 줄 멘트 */
+.developer-box .joke {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #768cae;
+    font-size: 0.85rem;
+}
