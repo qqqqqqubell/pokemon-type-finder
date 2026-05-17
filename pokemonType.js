@@ -1,4 +1,4 @@
-const SERVER_URL = 'https://giant-ghosts-speak.loca.lt/predict';
+const SERVER_URL = 'https://type-classifier-dw.onrender.com/predict';
 
 const imageInput = document.getElementById('imageInput');
 const preview = document.getElementById('preview');
